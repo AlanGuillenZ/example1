@@ -32,6 +32,10 @@ jobs:
       - name: Build Astro project
         run: npm run build
 
+      # ⬇️ ESTE PASO ES EL QUE FALTABA
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
