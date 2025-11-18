@@ -1,40 +1,30 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare
 
 on:
-  workflow_dispatch:
-
-env:
-  NODE_VERSION: 20
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-    name: Build and Deploy
+  deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: npm
+          node-version: 18
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build Astro
         run: npm run build
 
-      - name: Publish to Cloudflare Pages
-        if: github.event_name != 'pull_request'
-        uses: cloudflare/pages-action@v1
+      - name: Publish to Cloudflare
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: example1
-          directory: dist
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: publish
