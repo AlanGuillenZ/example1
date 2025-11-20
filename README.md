@@ -30,8 +30,3 @@ Este proyecto es un sitio construido con [Astro](https://astro.build) que toma c
    npm run dev
    ```
 3. Abre el navegador en `http://localhost:4321` para ver el sitio.
-
-## Próximos pasos sugeridos
-- Crear contenido propio en nuevas páginas o secciones.
-- Sustituir los enlaces de ejemplo por recursos del proyecto.
-- Ajustar el diseño visual acorde a la identidad del producto.
