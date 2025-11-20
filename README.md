@@ -1,46 +1,37 @@
-# Astro Starter Kit: Basics
+# Bitácora del proyecto
 
-```sh
-npm create astro@latest -- --template basics
+Este proyecto es un sitio construido con [Astro](https://astro.build) que toma como punto de partida la plantilla básica y la adapta al español. La página principal muestra un mensaje de bienvenida y enlaces útiles para documentación y comunidad.
+
+## Avance actual
+- **Página principal en español:** `src/pages/index.astro` utiliza un layout general y el componente `Welcome` para presentar el contenido.
+- **Componente de bienvenida personalizado:** `src/components/Welcome.astro` contiene el hero con fondo difuminado, enlaces a la documentación y al Discord de Astro, además de una tarjeta destacando las novedades de Astro 5.0.
+- **Diseño responsive:** El estilo embebido en `Welcome.astro` ajusta la disposición de los elementos para pantallas móviles.
+
+## Estructura del proyecto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/            # Recursos estáticos
+├── src/
+│   ├── assets/        # Iconos y fondos utilizados en el hero
+│   ├── components/    # Componentes Astro (incluye Welcome)
+│   ├── layouts/       # Plantillas de layout compartidas
+│   └── pages/         # Páginas del sitio (inicio en index.astro)
+└── package.json       # Dependencias y scripts de npm
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Cómo ejecutar el proyecto
+1. Instala dependencias:
+   ```bash
+   npm install
+   ```
+2. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+3. Abre el navegador en `http://localhost:4321` para ver el sitio.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Próximos pasos sugeridos
+- Crear contenido propio en nuevas páginas o secciones.
+- Sustituir los enlaces de ejemplo por recursos del proyecto.
+- Ajustar el diseño visual acorde a la identidad del producto.
