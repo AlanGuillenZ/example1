@@ -1,7 +1,3 @@
-Perfecto, Alan — te armo **tu README FINAL**, completo, profesional, limpio, con tus **dos workflows**, tus **badges**, tu **pipeline explicadito**, y listo para copiar/pegar en tu repositorio.
-
-Aquí va 🔥👇
-(Si quieres luego lo hacemos más corto o más visual.)
 
 ---
 
@@ -12,25 +8,6 @@ Aquí va 🔥👇
   <img src="https://img.shields.io/badge/Powered%20By-Cloudflare-black?logo=cloudflare&style=for-the-badge" />
   <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black?style=for-the-badge&logo=githubactions" />
 </div>
-
----
-
-## 📛 Badges
-
-![Astro](https://img.shields.io/badge/Astro-%F0%9F%9A%80-blueviolet?style=for-the-badge)
-![Cloudflare Pages](https://img.shields.io/badge/Cloudflare%20Pages-Deployed-orange?style=for-the-badge\&logo=cloudflare)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Preview%20/dev-blue?style=for-the-badge\&logo=github)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Node](https://img.shields.io/badge/Node-20.x-green?style=for-the-badge\&logo=node.js)
-
-### 🔁 Badges dinámicos (de tus workflows)
-
-> Reemplaza los nombres si tus archivos tienen otros nombres.
-
-```md
-![Cloudflare Deploy](https://github.com/AlanGuillenZ/example1/actions/workflows/deploy-cf.yml/badge.svg)
-![GH Pages Preview](https://github.com/AlanGuillenZ/example1/actions/workflows/deploy-gh.yml/badge.svg)
-```
 
 ---
 
@@ -116,7 +93,6 @@ Los secretos usados en GitHub Actions son:
 
 * `CF_API_TOKEN`
 * `CF_ACCOUNT_ID`
-* `CF_PROJECT_NAME`
 
 ---
 
@@ -187,13 +163,3 @@ Infraestructura servida por **Cloudflare Pages + GitHub Actions**
 Sitio generado con **Astro** 🚀
 
 ---
-
-Si quieres, puedo añadir:
-
-* Capturas
-* Un diagrama gráfico (tipo PNG)
-* Una mini sección sobre tu dominio
-* Un índice automático
-* Una sección “Roadmap” para tu blog
-
-¿Quieres algo más visual o lo quieres así?
